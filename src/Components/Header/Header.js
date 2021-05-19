@@ -11,9 +11,9 @@ function Header() {
           <div id="menuToggle">
             <input type="checkbox" />
 
-            <span></span>
-            <span></span>
-            <span></span>
+            <span className="span1"></span>
+            <span className="span2"></span>
+            <span className="span3"></span>
 
             <ul id="menu">
               <a href="#">
