@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  color: white;
+  background-color: #27336b;
+}
+
+.logo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  margin: 15px;
+  border: 2px solid white;
+}
+.logo p {
+  align-self: center;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=Style.css.map */
