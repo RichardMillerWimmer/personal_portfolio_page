@@ -6,6 +6,11 @@ body {
   text-align: center;
   color: white;
   background-color: #27336b;
+  background: url("../Media/Nupar.jpg") center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-size: 400vh auto;
+  background-position: 63.5%;
 }
 
 .header {
