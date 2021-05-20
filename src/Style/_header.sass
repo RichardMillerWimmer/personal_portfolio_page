@@ -1,4 +1,10 @@
 .header
+    position: fixed
+    top: 0
+    width: 100%
+    // background: black
+    
+.headerContainer
     display: flex
     flex-flow: row nowrap
     justify-content: space-between
@@ -14,10 +20,13 @@
     margin: 15px
     border: 2px solid white
     p  
+        font-family: $font-header
         align-self: center
         font-size: 2rem
+        padding-top: 10px
 
-
+li 
+    font-family: $font-header
 
 #menuToggle
     display: block

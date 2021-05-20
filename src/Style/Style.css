@@ -1,12 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Special+Elite&display=swap");
 * {
   box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 body {
   text-align: center;
   color: white;
   background-color: #27336b;
-  background: url("../Media/Nupar.jpg") center;
+  background: linear-gradient(rgba(39, 51, 107, 0.5), rgba(39, 51, 107, 0.5)), url("../Media/Nupar.jpg");
   background-repeat: no-repeat;
   object-fit: contain;
   background-size: 400vh auto;
@@ -14,6 +20,12 @@ body {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.headerContainer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -29,8 +41,14 @@ body {
   border: 2px solid white;
 }
 .logo p {
+  font-family: "Special Elite", cursive;
   align-self: center;
   font-size: 2rem;
+  padding-top: 10px;
+}
+
+li {
+  font-family: "Special Elite", cursive;
 }
 
 #menuToggle {
@@ -123,6 +141,23 @@ body {
 
 #menuToggle input:checked ~ ul {
   transform: none;
+}
+
+.hero {
+  flex: 1 1 auto;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 25px;
+}
+.hero h1 {
+  font-family: "Special Elite", cursive;
+  font-size: 2.5rem;
+}
+.hero h2 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.5rem;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 /*# sourceMappingURL=Style.css.map */
