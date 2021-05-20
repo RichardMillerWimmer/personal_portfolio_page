@@ -16,15 +16,15 @@ body {
   background-repeat: no-repeat;
   object-fit: contain;
   background-size: 400vh auto;
-  background-position: 63.5%;
+  background-position-x: 63.5%;
+  background-position-y: 55%;
 }
 
 .header {
-  position: fixed;
-  top: 0;
+  flex: 0 0 90px;
   width: 100%;
+  font-family: "Special Elite", cursive;
 }
-
 .headerContainer {
   display: flex;
   flex-flow: row nowrap;
@@ -45,10 +45,6 @@ body {
   align-self: center;
   font-size: 2rem;
   padding-top: 10px;
-}
-
-li {
-  font-family: "Special Elite", cursive;
 }
 
 #menuToggle {
@@ -144,10 +140,12 @@ li {
 }
 
 .hero {
-  flex: 1 1 auto;
+  margin-top: 90px;
+  flex: 1 0 100%;
   text-align: left;
   padding-left: 15px;
   padding-top: 25px;
+  border: 3px solid black;
 }
 .hero h1 {
   font-family: "Special Elite", cursive;
@@ -158,6 +156,22 @@ li {
   font-size: 1.5rem;
   padding-top: 10px;
   padding-bottom: 30px;
+}
+
+.footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  flex: 0 0 160px;
+}
+.footer .titleContainer {
+  display: block;
+  text-align: center;
+}
+.footer .titleContainer h4 {
+  font-family: "Special Elite", cursive;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=Style.css.map */
