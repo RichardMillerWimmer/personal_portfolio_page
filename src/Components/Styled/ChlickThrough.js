@@ -1,8 +1,7 @@
 import styled from '@emotion/styled';
 
 const ClickThrough = styled.div`
-    width: 85vw;
-    border: 3px solid black;
+    background: rgba(39, 48, 67, .9);
     margin: 20px auto;
     height: 250px;
     width: 300px;

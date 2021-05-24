@@ -15,9 +15,10 @@ body {
   background: linear-gradient(rgba(39, 51, 107, 0.5), rgba(39, 51, 107, 0.5)), url("../Media/Nupar.jpg");
   background-repeat: no-repeat;
   object-fit: contain;
+  background-attachment: fixed;
   background-size: 400vh auto;
   background-position-x: 63.5%;
-  background-position-y: 55%;
+  background-position-y: 70%;
 }
 
 .header {
@@ -145,18 +146,18 @@ body {
 .hero {
   flex: 1 1 auto;
   width: 100vw;
-  height: 80vh;
+  height: calc(100vh - 90px);
   text-align: left;
-  padding-left: 15px;
-  padding-top: 25px;
+  padding-left: 70px;
+  padding-top: 130px;
 }
 .hero h1 {
   font-family: "Special Elite", cursive;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 .hero h2 {
   font-family: "Fira Sans", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding-top: 10px;
   padding-bottom: 30px;
 }
@@ -166,13 +167,18 @@ body {
 }
 
 .aboutText {
+  padding: 100px 100px;
   transform: skew(-10deg);
+  transition: 800ms cubic-bezier(0.83, 0.04, 0.24, 0.87);
+}
+.aboutText:hover {
+  transform: skew(10deg);
 }
 
 .contactText {
   padding: 100px 100px;
   transform: skew(-10deg);
-  transition: 800ms ease-in;
+  transition: 800ms cubic-bezier(0.83, 0.04, 0.24, 0.87);
 }
 .contactText:hover {
   transform: skew(10deg);
