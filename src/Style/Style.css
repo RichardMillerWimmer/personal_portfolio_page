@@ -165,6 +165,19 @@ body {
   margin: 20px auto;
 }
 
+.aboutText {
+  transform: skew(-10deg);
+}
+
+.contactText {
+  padding: 100px 100px;
+  transform: skew(-10deg);
+  transition: 800ms ease-in;
+}
+.contactText:hover {
+  transform: skew(10deg);
+}
+
 .footer {
   display: flex;
   flex-flow: column nowrap;

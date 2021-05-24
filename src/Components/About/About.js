@@ -4,7 +4,9 @@ import ClickThrough from '../Styled/ChlickThrough';
 function About() {
   return (
     <div className="about">
-      <ClickThrough>About Component</ClickThrough>
+      <ClickThrough>
+          <h2 className='aboutText'>About Component</h2>
+          </ClickThrough>
     </div>
   );
 }
