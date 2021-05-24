@@ -1,9 +1,10 @@
 import React from "react";
+import ClickThrough from '../Styled/ChlickThrough';
 
 function Contact() {
   return (
     <div className="contact">
-      <h4>Contact Component</h4>
+      <ClickThrough>Contact Component</ClickThrough>
     </div>
   );
 }

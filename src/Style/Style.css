@@ -21,6 +21,8 @@ body {
 }
 
 .header {
+  position: sticky;
+  top: 0;
   height: 90px;
   flex: 0 0 90px;
   width: 100%;
@@ -147,7 +149,6 @@ body {
   text-align: left;
   padding-left: 15px;
   padding-top: 25px;
-  border: 3px solid black;
 }
 .hero h1 {
   font-family: "Special Elite", cursive;
@@ -158,6 +159,10 @@ body {
   font-size: 1.5rem;
   padding-top: 10px;
   padding-bottom: 30px;
+}
+
+.clickthrough {
+  margin: 20px auto;
 }
 
 .footer {

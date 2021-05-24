@@ -4,6 +4,7 @@ import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
 import Work from "./Components/Work/Work";
 import Contact from "./Components/Contact/Contact";
+import About from './Components/About/About';
 import Footer from "./Components/Footer/Footer";
 
 function App() {
@@ -12,7 +13,10 @@ function App() {
       <Header />
       <Hero />
       <Work />
-      <Contact />
+      <div className='clickthrough'>
+        <Contact />
+        <About />
+      </div>
       <Footer />
     </div>
   );
