@@ -162,6 +162,11 @@ body {
   padding-bottom: 30px;
 }
 
+.carouselImg {
+  height: 200px;
+  width: auto;
+}
+
 .clickthrough {
   margin: 20px auto;
 }
