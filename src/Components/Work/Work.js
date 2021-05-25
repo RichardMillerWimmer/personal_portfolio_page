@@ -1,5 +1,5 @@
 import React from "react";
-import AliceCarousel from 'react-alice-carousel';
+import ImageSlider from './ImageSlider';
 
 import polymath1 from '../../Images/polymath1.png';
 import polymath2 from '../../Images/polymath2.png';
@@ -15,25 +15,19 @@ import ttg4 from '../../Images/ttg4.png';
 function Work() {
 
   const polymathImg = [
-    <img src={polymath1} alt='' className='carouselImg'/>,
-    <img src={polymath2} alt='' className='carouselImg'/>,
-    <img src={polymath3} alt='' className='carouselImg'/>,
-    <img src={polymath4} alt='' className='carouselImg'/>
+    polymath1, polymath2, polymath3, polymath4
   ]
 
   const ttgImg = [
-    <img src={ttg1} alt='' className='carouselImg'/>,
-    <img src={ttg2} alt='' className='carouselImg'/>,
-    <img src={ttg3} alt='' className='carouselImg'/>,
-    <img src={ttg4} alt='' className='carouselImg'/>
+    ttg1, ttg2, ttg3, ttg4
   ]
 
   return (
     <div className="work">
       <div className="titleContainer">
         <h4>Work</h4>
-        <AliceCarousel autoPlay autoPlayInterval='3000' items={polymathImg}/>
-        <AliceCarousel autoPlay autoPlayInterval='3000' items={ttgImg}/>
+        <ImageSlider slides={polymathImg}/>
+        <ImageSlider slides={ttgImg}/>
       </div>
     </div>
   );
