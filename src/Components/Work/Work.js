@@ -25,7 +25,7 @@ function Work() {
   return (
     <div className="work">
       <div className="titleContainer">
-        <h4>Work</h4>
+        <h3>Work</h3>
         <ImageSlider slides={polymathImg}/>
         <ImageSlider slides={ttgImg}/>
       </div>

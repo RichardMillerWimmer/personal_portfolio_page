@@ -10,6 +10,7 @@
         position: absolute
         top: 60%
         left: 23px
+        padding: 3px 10px
         font-size: 2rem
         cursor: pointer
         user-select: none
@@ -17,8 +18,15 @@
         position: absolute
         top: 60%
         right: 23px
+        padding: 3px 10px
         font-size: 2rem
         cursor: pointer
         user-select: none
-         
+    .slide
+        opacity: 0
+        transition: 1s ease-in-out
+    .slide.active
+        opacity: 1
+        transition: 1s
+        transform: scale(1.05)
 
