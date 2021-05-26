@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Special+Elite&display=swap");
-/* @import "react-alice-carousel/lib/css/alice-carousel.css"; */
 * {
   box-sizing: border-box;
 }
@@ -163,9 +162,31 @@ body {
   padding-bottom: 30px;
 }
 
-.carouselImg {
+.imageSlider {
+  position: relative;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.imageSlider .image {
   height: 200px;
-  width: auto;
+}
+.imageSlider .prevArrow {
+  position: absolute;
+  top: 60%;
+  left: 23px;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+.imageSlider .nextArrow {
+  position: absolute;
+  top: 60%;
+  right: 23px;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
 }
 
 .clickthrough {
