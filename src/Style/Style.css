@@ -4,14 +4,12 @@
 }
 
 .App {
-  display: flex;
-  flex-flow: column nowrap;
+  width: 100vw;
 }
 
 body {
   text-align: center;
-  color: white;
-  background-color: #27336b;
+  color: #f0f0f0;
   background: linear-gradient(rgba(39, 51, 107, 0.5), rgba(39, 51, 107, 0.5)), url("../Media/Nupar.jpg");
   background-repeat: no-repeat;
   object-fit: contain;
@@ -162,29 +160,42 @@ body {
   padding-bottom: 30px;
 }
 
+.work {
+  background: rgba(39, 51, 107, 0.5);
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .work h3 {
   font-family: "Special Elite", cursive;
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 30px;
+}
+
+.workTitle {
+  font-family: "Special Elite", cursive;
+  font-size: 1.8;
+  margin-bottom: 15px;
 }
 
 .imageSlider {
   position: relative;
-  height: 300px;
-  width: 400px;
-  margin: 20px auto;
-  padding: 20px;
+  height: auto;
+  width: 300px;
+  margin: 0 auto 30px auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
 }
 .imageSlider .image {
-  height: 200px;
+  height: 150px;
 }
 .imageSlider .prevArrow {
   position: absolute;
-  top: 75%;
-  left: 10px;
+  top: 40%;
+  left: -20px;
   padding: 3px 10px;
   font-size: 2rem;
   cursor: pointer;
@@ -192,8 +203,8 @@ body {
 }
 .imageSlider .nextArrow {
   position: absolute;
-  top: 75%;
-  right: 10px;
+  top: 40%;
+  right: -20px;
   padding: 3px 10px;
   font-size: 2rem;
   cursor: pointer;

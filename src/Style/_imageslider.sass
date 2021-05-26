@@ -1,26 +1,31 @@
+.workTitle
+    font-family: $font-header
+    font-size: 1.8
+    margin-bottom: 15px
+
 .imageSlider
     position: relative
-    height: 300px
-    width: 400px
-    margin: 20px auto
-    padding: 20px
+    height: auto
+    width: 300px
+    margin: 0 auto 30px auto
     display: flex
+    flex-direction: column
     justify-content: center
     align-content: center
     .image
-        height: 200px
+        height: 150px
     .prevArrow
         position: absolute
-        top: 75%
-        left: 10px
+        top: 40%
+        left: -20px
         padding: 3px 10px
         font-size: 2rem
         cursor: pointer
         user-select: none
     .nextArrow
         position: absolute
-        top: 75%
-        right: 10px
+        top: 40%
+        right: -20px
         padding: 3px 10px
         font-size: 2rem
         cursor: pointer
@@ -32,4 +37,6 @@
         opacity: 1
         transition: 1s
         transform: scale(1.05)
+
+    
 

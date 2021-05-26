@@ -24,11 +24,9 @@ function Work() {
 
   return (
     <div className="work">
-      <div className="titleContainer">
         <h3>Work</h3>
-        <ImageSlider slides={polymathImg}/>
-        <ImageSlider slides={ttgImg}/>
-      </div>
+        <ImageSlider slides={polymathImg} title={'Polymath Visuals'}/>
+        <ImageSlider slides={ttgImg} title={'TopTable Games'}/>
     </div>
   );
 }

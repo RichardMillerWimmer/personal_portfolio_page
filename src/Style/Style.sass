@@ -6,20 +6,22 @@ $bp-tablet: 800px
 
 $font-main: 'Fira Sans', sans-serif
 $font-header: 'Special Elite', cursive
+
+$color-font: rgb(240, 240, 240)
+$color-theme: rgb(39, 51, 107)
+$color-theme-trans: rgba(39, 51, 107, 0.5)
   
   
 *
     box-sizing: border-box
 
 .App
-   display: flex
-   flex-flow: column nowrap
+   width: 100vw
 
 body 
   text-align: center
-  color: white
-  background-color: rgb(39, 51, 107)
-  background: linear-gradient(rgba(39, 51, 107, 0.5), rgba(39, 51, 107, 0.5)), url('../Media/Nupar.jpg')
+  color: $color-font
+  background: linear-gradient($color-theme-trans, $color-theme-trans), url('../Media/Nupar.jpg')
   background-repeat: no-repeat
   object-fit: contain
   background-attachment: fixed
