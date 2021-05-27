@@ -37,6 +37,32 @@
         opacity: 1
         transition: 1s
         transform: scale(1.05)
+    .vistSite
+        display: inline-block
+        background: $color-font
+        font-family: $font-main
+        padding: 10px
+        color: rgb(40, 40, 40)
+        position: absolute
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 10
+        top: 50%
+        transition: .5s
+    .siteHover
+        transition: .5s
+        .vistSite
+            opacity: 0
+        .imageHover
+            opacity: 1
+    &:hover
+        .vistSite
+            opacity: 1
+        .imageHover
+            opacity: .4
+        
+    a
+        cursor: pointer
 
     
 

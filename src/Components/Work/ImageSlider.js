@@ -20,13 +20,17 @@ const ImageSlider = (props) => {
             <h4 className='workTitle'>{props.title}</h4>
             <section className='imageSlider'>
                 <p className='prevArrow' onClick={prevSlide}>&#10092;</p>
-                {props.slides.map((slide, index) => {
-                    return (
-                        <div className={index === current ? 'slide active' : 'slide'} key={index}>
+                <div className='siteHover'>
+                    <a className='imageHover' href={props.site} target='_blank'>
+                    <p className='vistSite'>visit site</p>
+                    {props.slides.map((slide, index) => {
+                        return (
+                            <div className={index === current ? 'slide active' : 'slide'} key={index}>
                             {current === index && <img src={slide} alt='' className='image'/> }
-                        </div> 
-                    )
-                })}
+                            </div> 
+                        )
+                    })}</a>
+                </div>
                 <p className='nextArrow' onClick={nextSlide}>&#10093;</p>
             
             </section>

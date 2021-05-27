@@ -25,8 +25,8 @@ function Work() {
   return (
     <div className="work">
         <h3>Work</h3>
-        <ImageSlider slides={polymathImg} title={'Polymath Visuals'}/>
-        <ImageSlider slides={ttgImg} title={'TopTable Games'}/>
+        <ImageSlider slides={polymathImg} title={'Polymath Visuals'} site={'https://polymathvisualsstore.com/#/'}/>
+        <ImageSlider slides={ttgImg} title={'TopTable Games'} site={'https://toptablegames.net/#/'}/>
     </div>
   );
 }
