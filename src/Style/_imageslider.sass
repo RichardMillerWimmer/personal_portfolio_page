@@ -3,9 +3,13 @@
     font-size: 1.8
     margin-bottom: 15px
 
+a
+    cursor: pointer
+
 .imageSlider
     position: relative
-    height: auto
+    // height: auto
+    object-fit: contain
     width: 300px
     margin: 0 auto 30px auto
     display: flex
@@ -14,6 +18,10 @@
     align-content: center
     .image
         height: 150px
+        width: auto
+        display: relative
+        opacity: 1
+        transition: 0.5s ease
     .prevArrow
         position: absolute
         top: 40%
@@ -37,32 +45,35 @@
         opacity: 1
         transition: 1s
         transform: scale(1.05)
-    .vistSite
-        display: inline-block
-        background: $color-font
-        font-family: $font-main
-        padding: 10px
-        color: rgb(40, 40, 40)
-        position: absolute
-        left: 50%
-        transform: translate(-50%, -50%)
-        z-index: 10
-        top: 50%
-        transition: .5s
-    .siteHover
-        transition: .5s
-        .vistSite
-            opacity: 0
-        .imageHover
-            opacity: 1
-    &:hover
-        .vistSite
-            opacity: 1
-        .imageHover
-            opacity: .4
-        
-    a
-        cursor: pointer
+    // .visitSite
+    //     display: inline-block
+    //     background: $color-font
+    //     font-family: $font-main
+    //     padding: 10px
+    //     color: rgb(40, 40, 40)
+    //     position: absolute
+    //     left: 50%
+    //     transform: translate(-50%, -50%)
+    //     z-index: 10
+    //     top: 50%
+    //     opacity: 0
+    //     transition: .5s
+    // .image:hover .visitSite
+    //     opacity: .4
+    // .image .visitSite
+    //     opacity: 1
+    
+@media (min-width: $bp-mobile)
+    .imageSlider
+        width: 400px
+        .image
+            height: 200px
+        .prevArrow
+            top: 40%
+            left: -20px
+        .nextArrow
+            top: 40%
+            right: -20px
 
     
 
