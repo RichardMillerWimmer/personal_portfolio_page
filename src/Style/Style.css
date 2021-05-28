@@ -293,16 +293,23 @@ a {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  flex: 0 0 100px;
+  align-content: center;
+  height: 120px;
 }
 .footer .titleContainer {
   display: block;
   text-align: center;
+  margin-bottom: 20px;
 }
 .footer .titleContainer h4 {
   font-family: "Special Elite", cursive;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
+}
+.footer .titleContainer .icon {
+  height: 50px;
+  color: #f0f0f0;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=Style.css.map */
