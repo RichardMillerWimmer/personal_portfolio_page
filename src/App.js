@@ -14,8 +14,8 @@ function App() {
       <Hero />
       <Work />
       <div className='clickthrough'>
-        {/* <Contact />
-        <About /> */}
+        <Contact />
+        <About />
       </div>
       <Footer />
     </div>

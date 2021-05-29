@@ -4,7 +4,8 @@ import ClickThrough from '../Styled/ChlickThrough';
 function Contact() {
   return (
     <div className="contact">
-      <ClickThrough><h2 className='contactText'>Contact Component</h2></ClickThrough>
+      <h4>Let's work together.</h4>
+      <a href='mailto: richardmmill@gmail.com'>email me</a>
     </div>
   );
 }
