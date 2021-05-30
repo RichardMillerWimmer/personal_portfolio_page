@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -18,13 +19,13 @@ function Header() {
 
               <ul id="menu">
                 <a href="#">
-                  <li>home</li>
+                  <li><Link to='/'>home</Link></li>
                 </a>
                 <a href="#">
                   <li>about</li>
                 </a>
                 <a href="#">
-                  <li>work</li>
+                  <li><Link to='/work'>work</Link></li>
                 </a>
                 <a href="#">
                   <li>contact</li>
