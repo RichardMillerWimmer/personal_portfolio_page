@@ -271,6 +271,25 @@ a {
   margin: 20px auto;
 }
 
+.about {
+  height: auto;
+  background: rgba(39, 51, 107, 0.5);
+  padding: 30px;
+}
+.about h2 {
+  font-family: "Special Elite", cursive;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+.about .aboutText {
+  text-align: left;
+  padding: 0 30px;
+  line-height: 1.4;
+}
+.about .aboutText p {
+  font-family: "Fira Sans", sans-serif;
+}
+
 .contactText {
   padding: 100px 100px;
   transform: skew(-10deg);
