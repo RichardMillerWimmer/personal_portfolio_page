@@ -20,7 +20,6 @@ body {
 }
 
 .header {
-  position: sticky;
   top: 0;
   height: 90px;
   flex: 0 0 90px;
@@ -57,6 +56,7 @@ body {
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
+  z-index: 100;
 }
 
 #menuToggle a {
@@ -66,7 +66,7 @@ body {
 }
 
 #menuToggle a:hover {
-  color: tomato;
+  text-decoration: underline;
 }
 
 #menuToggle input {
@@ -231,6 +231,7 @@ a {
   font-size: 2rem;
   cursor: pointer;
   user-select: none;
+  z-index: 10;
 }
 .imageSlider .nextArrow {
   position: absolute;
@@ -240,6 +241,7 @@ a {
   font-size: 2rem;
   cursor: pointer;
   user-select: none;
+  z-index: 10;
 }
 .imageSlider .slide {
   opacity: 0;

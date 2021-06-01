@@ -22,9 +22,6 @@ function Header() {
                   <li><Link to='/'>home</Link></li>
                 </a>
                 <a href="#">
-                  <li>about</li>
-                </a>
-                <a href="#">
                   <li><Link to='/work'>work</Link></li>
                 </a>
                 <a href="#">
