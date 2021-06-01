@@ -104,7 +104,7 @@ body {
 
 #menuToggle input:checked ~ span {
   opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
+  transform: rotate(45deg) translate(-2px, 0px);
   background: #232323;
 }
 
@@ -278,7 +278,7 @@ a {
 }
 .about h2 {
   font-family: "Special Elite", cursive;
-  font-size: 1.5rem;
+  font-size: 1.8em;
   padding-bottom: 20px;
 }
 .about .aboutText {
@@ -300,11 +300,13 @@ a {
 }
 
 .footer {
+  box-sizing: border-box;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-content: center;
   height: 120px;
+  padding-top: 40px;
 }
 .footer .titleContainer {
   display: block;
@@ -312,14 +314,24 @@ a {
   margin-bottom: 20px;
 }
 .footer .titleContainer h4 {
+  display: inline-block;
   font-family: "Special Elite", cursive;
   font-size: 1.5rem;
   text-align: center;
+  padding: 10px 10px 6px 10px;
+  border: 2px transparent solid;
 }
 .footer .titleContainer .icon {
   height: 50px;
   color: #f0f0f0;
   margin: 10px;
+}
+.footer .titleContainer .nameLink {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+.footer .titleContainer:hover h4 {
+  border: 2px #f0f0f0 solid;
 }
 
 /*# sourceMappingURL=Style.css.map */

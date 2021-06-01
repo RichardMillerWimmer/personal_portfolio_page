@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="footer">
       <div className="titleContainer">
-      <a href="mailto: richardmmill@gmail.com"><h4>Richard Miller Wimmer</h4></a>
+      <a className='nameLink' href="mailto: richardmmill@gmail.com"><h4>Richard Miller Wimmer</h4></a>
         <div>
           <a href="https://github.com/RichardMillerWimmer" target="_blank">
             <img className="icon" src={github} alt="github link" />
