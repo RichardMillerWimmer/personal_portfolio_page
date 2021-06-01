@@ -1,12 +1,13 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 function About() {
   return (
     <div className="about">
       <h2>About Me</h2>
-      <div className="aboutText">
+      <section className="aboutText">
         <p>
-          Allow me to introduce myself, I am Richard, a full stack web
+          Allow me to introduce myself, My name is Richard, and I'm a full stack web
           developer/designer. My family and I call the Cincinnit/Northern
           Kentucky area home.
         </p>
@@ -23,11 +24,19 @@ function About() {
         </p>
         <br></br>
         <p>
-          I would love to connect with you, find me on <a>LinkedIn</a> and shoot me a message.  You can also contact me <a>here</a>.  
+          I would love to connect with you, find me on <a>LinkedIn</a> and shoot
+          me a message. You can also contact me <Link className='contactLink' to='/contact'>here</Link>.
         </p>
         <br></br>
-        <a href='https://docs.google.com/document/d/1_gpG0nhrPrHhr04xQLNj1Yf3b2En5tP3-XkwiF19gP0/export?format=pdf'>resume</a>
-      </div>
+        <div className='centerBtn'>
+          <a
+            className="resumeLink"
+            href="https://docs.google.com/document/d/1_gpG0nhrPrHhr04xQLNj1Yf3b2En5tP3-XkwiF19gP0/export?format=pdf"
+          >
+            my resume
+          </a>
+        </div>
+      </section>
     </div>
   );
 }

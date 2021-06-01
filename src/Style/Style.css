@@ -290,6 +290,33 @@ a {
   font-family: "Fira Sans", sans-serif;
 }
 
+.centerBtn {
+  text-align: center;
+}
+
+.resumeLink {
+  margin: 0 auto;
+  text-decoration: none;
+  color: #f0f0f0;
+  font-family: "Fira Sans", sans-serif;
+  padding: 8px;
+  border: 2px transparent solid;
+}
+
+.resumeLink:hover {
+  border: 2px #f0f0f0 solid;
+}
+
+.contactLink {
+  color: #f0f0f0;
+}
+
+@media (min-width: 800px) {
+  .aboutText {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
 .contactText {
   padding: 100px 100px;
   transform: skew(-10deg);
@@ -326,11 +353,12 @@ a {
   color: #f0f0f0;
   margin: 10px;
 }
-.footer .titleContainer .nameLink {
+
+.nameLink {
   text-decoration: none;
   color: #f0f0f0;
 }
-.footer .titleContainer:hover h4 {
+.nameLink:hover h4 {
   border: 2px #f0f0f0 solid;
 }
 
