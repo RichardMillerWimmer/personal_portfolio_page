@@ -15,33 +15,37 @@
         font-size: 1.5rem
         padding-top: 10px
         padding-bottom: 30px
+
 .lineOne
-    animation: typingOne 3s steps(7)
+    animation: slideInOne 1.5s ease-out
     overflow: hidden
-    width: 7ch
-@keyframes typingOne
+@keyframes slideInOne
     0%
-        width: 0ch  
+        padding-left: 100%
     100%
-        width: 7ch
+        padding-left: 0
 .lineTwo
-    animation: typingTwo 3s steps(6)
+    animation: slideInTwo 3s ease-out
     overflow: hidden
-    width: 6ch
-@keyframes typingTwo
+@keyframes slideInTwo
     0%
-        width: 0ch  
+        padding-left: 100%
+    33%
+        padding-left: 100%
     100%
-        width: 6ch  
+        padding-left: 0
 .lineThree
-    animation: typingThree 3s steps(6)
+    animation: slideInThree 4.5s ease-out
     overflow: hidden
-    width: 6ch
-@keyframes typingThree
+@keyframes slideInThree
     0%
-        width: 0ch  
+        padding-left: 100%
+    50%
+        padding-left: 100%
     100%
-        width: 6ch  
+        padding-left: 0
+        
+ 
 
 
 @media (min-width: $bp-mobile)
