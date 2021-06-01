@@ -24,8 +24,8 @@ function Header() {
                 <a href="#">
                   <li><Link to='/work'>work</Link></li>
                 </a>
-                <a href="#">
-                  <li><Link to='/contact'>contact</Link></li>
+                <a href="mailto: richardmmill@gmail.com">
+                  <li>contact</li>
                 </a>
               </ul>
             </div>

@@ -152,7 +152,7 @@ body {
 }
 .hero h1 {
   font-family: "Special Elite", cursive;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 .hero h2 {
   font-family: "Fira Sans", sans-serif;
@@ -161,12 +161,54 @@ body {
   padding-bottom: 30px;
 }
 
+.lineOne {
+  animation: typingOne 3s steps(7);
+  overflow: hidden;
+  width: 7ch;
+}
+
+@keyframes typingOne {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 7ch;
+  }
+}
+.lineTwo {
+  animation: typingTwo 3s steps(6);
+  overflow: hidden;
+  width: 6ch;
+}
+
+@keyframes typingTwo {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 6ch;
+  }
+}
+.lineThree {
+  animation: typingThree 3s steps(6);
+  overflow: hidden;
+  width: 6ch;
+}
+
+@keyframes typingThree {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 6ch;
+  }
+}
 @media (min-width: 480px) {
   .hero {
     padding-left: 70px;
   }
   .hero h1 {
-    font-size: 2.8rem;
+    font-size: 3.5rem;
   }
   .hero h2 {
     font-size: 1.8rem;
@@ -177,7 +219,7 @@ body {
     padding-left: 120px;
   }
   .hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .hero h2 {
     font-size: 2rem;
@@ -280,7 +322,7 @@ a {
 }
 .about h2 {
   font-family: "Special Elite", cursive;
-  font-size: 1.8em;
+  font-size: 2em;
   padding-bottom: 20px;
 }
 .about .aboutText {
@@ -319,13 +361,20 @@ a {
     margin: 0 auto;
   }
 }
-.contactText {
-  padding: 100px 100px;
-  transform: skew(-10deg);
-  transition: 800ms cubic-bezier(0.83, 0.04, 0.24, 0.87);
+.contact {
+  width: 100vw;
+  height: calc(100vh - 210px);
+  background: rgba(39, 51, 107, 0.5);
+  padding: 30px;
 }
-.contactText:hover {
-  transform: skew(10deg);
+.contact h2 {
+  font-family: "Special Elite", cursive;
+  font-size: 2rem;
+}
+.contact .emailMe {
+  font-family: "Special Elite", cursive;
+  text-decoration: none;
+  color: #f0f0f0;
 }
 
 .footer {
