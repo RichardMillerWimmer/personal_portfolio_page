@@ -1,7 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
+
 import { Link } from "react-router-dom";
 
 function Header() {
+  const [checkbox, setCheckbox] = useState(false);
+
+  const toggleCheckbox = () => {
+    setCheckbox(!checkbox);
+  }; 
+
   return (
     <div className="header">
       <div className="headerContainer">
@@ -11,7 +18,7 @@ function Header() {
         <div className="menu">
           <nav role="navigation">
             <div id="menuToggle">
-              <input type="checkbox" />
+              <input type="checkbox" id='checkbox' checked={checkbox} onChange={toggleCheckbox}/>
 
               <span className="span1"></span>
               <span className="span2"></span>
@@ -19,13 +26,13 @@ function Header() {
 
               <ul id="menu">
                 <a href="#">
-                  <li><Link to='/'>home</Link></li>
+                  <li><Link to='/' onClick={toggleCheckbox}>home</Link></li>
                 </a>
                 <a href="#">
-                  <li><Link to='/work'>work</Link></li>
+                  <li><Link to='/work' onClick={toggleCheckbox}>work</Link></li>
                 </a>
                 <a href="mailto: richardmmill@gmail.com">
-                  <li>contact</li>
+                  <li onClick={toggleCheckbox}>contact</li>
                 </a>
               </ul>
             </div>
