@@ -16,7 +16,7 @@ const ImageSlider = (props) => {
   console.log(props);
   return (
     <section>
-      <h4 className="workTitle">{props.title}</h4>
+      {/* <h4 className="workTitle">{props.title}</h4> */}
       <div className="imageSlider">
         <p className="prevArrow" onClick={prevSlide}>
           &#10092;
