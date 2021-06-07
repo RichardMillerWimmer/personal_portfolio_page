@@ -249,8 +249,12 @@ body {
 .workFllex {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.workContainer {
+  width: 450px;
 }
 
 @media (min-width: 800px) {
@@ -258,12 +262,6 @@ body {
     flex-flow: row wrap;
   }
 }
-.workTitle {
-  font-family: "Special Elite", cursive;
-  font-size: 1.8;
-  margin-bottom: 15px;
-}
-
 a {
   cursor: pointer;
 }
