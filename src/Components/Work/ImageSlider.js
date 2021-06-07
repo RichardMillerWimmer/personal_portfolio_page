@@ -21,7 +21,7 @@ const ImageSlider = (props) => {
         <p className="prevArrow" onClick={prevSlide}>
           &#10092;
         </p>
-        <a className="imageHover" href={props.site} target="_blank">
+        <a className="imageHover" href={props.site} target="_blank" rel="noreferrer">
           <div className="siteHover">
             {/* <p className="visitSite">visit site</p> */}
             {props.slides.map((slide, index) => {

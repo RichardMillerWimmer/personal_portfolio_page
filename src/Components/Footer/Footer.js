@@ -9,11 +9,11 @@ function Footer() {
       <div className="titleContainer">
       <a className='nameLink' href="mailto: richardmmill@gmail.com"><h4>Richard Miller Wimmer</h4></a>
         <div>
-          <a href="https://github.com/RichardMillerWimmer" target="_blank">
+          <a href="https://github.com/RichardMillerWimmer" target="_blank" rel="noreferrer">
             <img className="icon" src={github} alt="github link" />
           </a>
           <a href="https://www.linkedin.com/in/richard-miller-wimmer/"
-            target="_blank">
+            target="_blank" rel="noreferrer">
             <img className="icon" src={linkedin} alt="linkedin link" />
             <br></br>
             

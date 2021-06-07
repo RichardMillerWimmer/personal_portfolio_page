@@ -24,7 +24,7 @@ function About() {
         </p>
         <br></br>
         <p>
-          I would love to connect with you, find me on <a>LinkedIn</a> and shoot
+          I would love to connect with you, find me on <a className='linkedInLink' href='https://www.linkedin.com/in/richard-miller-wimmer/' target='_blank' rel="noreferrer">LinkedIn</a> and shoot
           me a message. You can also contact me <Link className='contactLink' to='/contact'>here</Link>.
         </p>
         <br></br>

@@ -24,8 +24,11 @@ body {
   height: 90px;
   flex: 0 0 90px;
   width: 100%;
+}
+.header li {
   font-family: "Special Elite", cursive;
 }
+
 .headerContainer {
   display: flex;
   flex-flow: row nowrap;
@@ -40,12 +43,17 @@ body {
   width: 60px;
   margin: 15px;
   border: 2px solid white;
+  color: #f0f0f0;
 }
 .logo p {
   font-family: "Special Elite", cursive;
   align-self: center;
   font-size: 2rem;
   padding-top: 10px;
+}
+
+.homeLink {
+  text-decoration: none;
 }
 
 #menuToggle {
@@ -367,6 +375,10 @@ a {
 
 .resumeLink:hover {
   border: 2px #f0f0f0 solid;
+}
+
+.linkedInLink {
+  color: #f0f0f0;
 }
 
 .contactLink {
