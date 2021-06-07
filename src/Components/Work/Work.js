@@ -6,7 +6,7 @@ import WorkArr from "../../Media/WorkArr";
 
 function Work() {
 
-  console.log(WorkArr)
+  // console.log(WorkArr)
 
 
   let mappedWork = WorkArr.map((elem) => {

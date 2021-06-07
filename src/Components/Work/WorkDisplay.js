@@ -9,8 +9,8 @@ function WorkDisplay(props) {
   return (
     <div className="work">
       <h3>WorkDisplay Component</h3>
-      <h3>{this.props.work.title}</h3>
-      <p>{this.props.work.description}</p>
+      <h3>{props.location.state.work.work.title}</h3>
+      {/* <p>{props.work.description}</p> */}
     </div>
   );
 }
