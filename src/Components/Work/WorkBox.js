@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
-import image from "../../Images/polymath1.png";
 
 function WorkBox(props) {
     const [work, setWork] = useState()
+    
     useEffect(() => {
         setWork(props)
     },[])
-//   console.log(props);
+  console.log(props);
 
 
   return (
