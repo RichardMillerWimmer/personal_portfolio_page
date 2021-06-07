@@ -8,13 +8,13 @@ function About() {
       <section className="aboutText">
         <p>
           Allow me to introduce myself, My name is Richard, and I'm a full stack web
-          developer/designer. My family and I call the Cincinnit/Northern
+          developer/designer. My family and I call the Cincinnati/Northern
           Kentucky area home.
         </p>
         <br></br>
         <p>
           My professional path has lead me to development but along the way I
-          have gathered many skills in other creative disciplines giving me a
+          have gathered many skills in other creative disciplines. This gives me a
           unique approach to development and design.
         </p>
         <br></br>
