@@ -1,9 +1,9 @@
 .work 
-    background: $color-theme-trans
+    // background: $color-theme-trans
     margin-top: 5px
     margin-bottom: 20px
-    padding-top: 30px
-    padding-bottom: 30px
+    padding-top: 50px
+    padding-bottom: 50px
     h3
         font-family: $font-header
         font-size: 2.2rem
@@ -11,16 +11,58 @@
     h4
         font-family: $font-header
         font-size: 1.2rem
-        margin-bottom: 20px
-.workFllex 
+        margin-bottom: 30px
+.workFlex 
     display: flex
     flex-flow: column nowrap
-    justify-content: flex-start
-    align-items: center
+    justify-content: center
+    // align-items: center
 .workContainer
-    width: 450px
+    margin: 30px auto
+.workImg
+    width: 300px
+    // z-index: 30
+.wrapImage 
+  position: relative
+  &::before,
+  &::after 
+    content: ""
+    width: 100%
+    height: 100%
+    position: absolute
+    z-index: -1
+    border: 2px solid $color-font
+    transition: all .25s ease-out
+  
+  &::before 
+    background-color: $color-font
+    top: -10px
+    left: -10px
+  
+  &::after 
+    bottom: -10px
+    right: -10px
+  
+  &:hover 
+    &::before 
+      top: 15px
+      left: 15px
+    
+    &::after 
+      bottom: 15px
+      right: 15px
+
+
+@media (min-width: $bp-mobile)
+    .workImg 
+        width: 420px
 
 @media (min-width: $bp-tablet)
     .workFlex
         flex-flow: row wrap
+        justify-content: space-around
+    .workContainer
+        margin: 30px 40px 30px 30px
+    .workImg
+        width: 500px
     
