@@ -1,7 +1,7 @@
 import React from "react";
 import WorkBox from "./WorkBox";
 
-import WorkArr from "../../Media/WorkArr";
+// import WorkArr from "../../Media/WorkArr";
 
 
 function Work() {

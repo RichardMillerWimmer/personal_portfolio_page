@@ -13,21 +13,21 @@ function WorkDisplay(props) {
     setProject(JSON.parse(data));
   }, []);
 
-  useEffect(() => {
-    //   if(!project.id){
-    //       setProject(props.location.state.work.work)
-    //   } else {
-    //     const data = localStorage.getItem("project-object");
-    //     setProject(JSON.parse(data));
-    //   }
-      localStorage.setItem(
-        "project-object",
-        JSON.stringify(project)
-      );
-      return () => {
-        localStorage.clear()
-    }
-  });
+//   useEffect(() => {
+//       if(!project.id){
+//           setProject(props.location.state.work.work)
+//       } else {
+//         const data = localStorage.getItem("project-object");
+//         setProject(JSON.parse(data));
+//       }
+//       localStorage.setItem(
+//         "project-object",
+//         JSON.stringify(project)
+//       );
+//       return () => {
+//         localStorage.clear()
+//     }
+//   });
   
 //   useEffect(() => {
 //       return () => {

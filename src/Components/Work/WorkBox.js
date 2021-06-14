@@ -5,10 +5,13 @@ function WorkBox(props) {
     const [work, setWork] = useState()
     
     useEffect(() => {
-        setWork(props)
+        setWork(props.work)
     },[])
   console.log(props);
 
+  const setLocalStorage = (localProject) => {
+    localStorage.setItem("project-object", JSON.stringify(localProject))
+  };
 
   return (
     <section className="workFlex">
@@ -20,6 +23,7 @@ function WorkBox(props) {
               pathname: `/project/${props.work.id}`,
               state: { work: work },
             }}
+            onClick={setLocalStorage(work)}
           >
             <img src={props.work.imgOne} alt={props.work.title} className="workImg" />
           </Link>
