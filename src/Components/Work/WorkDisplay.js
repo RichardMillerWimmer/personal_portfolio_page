@@ -1,46 +1,33 @@
 import React, { useState, useEffect } from "react";
+import axios from 'axios';
+
 // import ImageSlider from "./ImageSlider";
 
 function WorkDisplay(props) {
   const [project, setProject] = useState({});
 
-//   useEffect(() => {
-//       setProject(props.location.state.work.work)
-//   })
+  // console.log(props)
 
   useEffect(() => {
-    const data = localStorage.getItem("project-object");
-    setProject(JSON.parse(data));
+    getProject()
   }, []);
 
-//   useEffect(() => {
-//       if(!project.id){
-//           setProject(props.location.state.work.work)
-//       } else {
-//         const data = localStorage.getItem("project-object");
-//         setProject(JSON.parse(data));
-//       }
-//       localStorage.setItem(
-//         "project-object",
-//         JSON.stringify(project)
-//       );
-//       return () => {
-//         localStorage.clear()
-//     }
-//   });
-  
-//   useEffect(() => {
-//       return () => {
-//           localStorage.clear()
-//       }
-//   })
+  const getProject = () => {
+    // console.log('getProject');
+    axios.get(`/api/work/${props.match.params.id}`)
+    .then(res => {
+      console.log(res.data);
+      setProject(res.data[0]);
+    })
+    .catch(err => console.log(err));
+  }
+
 
   // console.log(props)
   console.log(project);
 
   return (
     <div className="work">
-      <h3>Work Display Component</h3>
       <h3>{project.title}</h3>
       <p>{project.description}</p>
     </div>
