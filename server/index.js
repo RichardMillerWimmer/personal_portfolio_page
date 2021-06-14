@@ -12,7 +12,8 @@ const {SERVER_PORT} = process.env;
 app.use(express.json());
 
 // contorller enpoints
-app.get('/api/available-boots', contoller.getWork);
+app.get('/api/work', contoller.getWorks);
+app.get('/api/work/:id', contoller.getWork);
 
 
-app.listen(port, () => console.log(`server is running on ${SERVER_PORT}`));
+app.listen(SERVER_PORT, () => console.log(`server is running on ${SERVER_PORT}`));
