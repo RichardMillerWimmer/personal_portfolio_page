@@ -2,38 +2,41 @@ import React, { useState, useEffect } from "react";
 
 const ImageSlider = (props) => {
   const [current, setCurrent] = useState(0);
-  // const [imageSlides, setImageSlides] = useState([]);
+  const [imageSlides, setImageSlides] = useState([]);
 
   // useEffect(() => {
-  //   console.log('useeffect hit')
-  //   setImageSlides(props.images)
+  //   setImageSlides(props.imageSlides)
+  //   console.log('image useeffect hit', imageSlides)
   // }, [props])
 
   const nextSlide = () => {
-    setCurrent(current === props.images.length - 1 ? 0 : current + 1);
+    setCurrent(current === props.imageSlides.length - 1 ? 0 : current + 1);
   };
 
   const prevSlide = () => {
-    setCurrent(current === 0 ? props.images.length - 1 : current - 1);
+    setCurrent(current === 0 ? props.imageSlides.length - 1 : current - 1);
   };
 
-  console.log(props.imagesSlides);
-  // console.log(imageSlides)
+  console.log(props.imageSlides);
+  // console.log(typeof props.imageSlides)
 
-  let imageSlidesMapped;
-  if(props) {
-   imageSlidesMapped = props.imageSlides.map((slide, index) => {
-    return (
-      <div
-        className={index === current ? "slide active" : "slide"}
-                  key={index}
-                >
-                  {current === index && (
-                    <img src={slide} alt="" className="image" />
-                  )}
-      </div>
-    )
-    })}
+  let imageSlidesMapped = [];
+
+  if (props.imageSlides) {
+    // console.log("if hit");
+    imageSlidesMapped = props.imageSlides.map((slide, index) => {
+      return (
+        <div
+          className={index === current ? "slide active" : "slide"}
+          key={index}
+        >
+          {current === index && <img src={slide} alt="" className="image" />}
+        </div>
+      );
+    });
+  }
+
+  // console.log(imageSlidesMapped)
 
   return (
     <section>
@@ -42,8 +45,13 @@ const ImageSlider = (props) => {
         <p className="prevArrow" onClick={prevSlide}>
           &#10092;
         </p>
-        <a className="imageHover" href={props.title} target="_blank" rel="noreferrer">
-          {/* {props ? imageSlidesMapped : ''} */}
+        <a
+          className="imageHover"
+          href={props.title}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {imageSlidesMapped}
           {/* <img src={props.images}/> */}
           {/* <div className="siteHover">
             <p className="visitSite">visit site</p>

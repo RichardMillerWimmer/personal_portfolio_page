@@ -13,6 +13,11 @@ function WorkDisplay(props) {
     getProject()
   }, []);
 
+  useEffect(() => {
+    setImageSlides(project.images)
+    console.log(imageSlides)
+  }, [project])
+
 
   const getProject = () => {
     // console.log('getProject');
@@ -22,20 +27,20 @@ function WorkDisplay(props) {
       setProject(res.data[0]);
       setImageSlides(res.data[0].images)
       console.log(res.data[0].images)
-      console.log(imageSlides)
+      // console.log(imageSlides)
     })
     .catch(err => console.log(err));
   }
 
 
-  // console.log(props)
-  // console.log(project);
+  console.log(imageSlides)
+  console.log(project);
 
   return (
     <div className="workDisplay">
       <h2>{project.title}</h2>
       <p className="workDisplayText">{project.description}</p>
-      {imageSlides ? <ImageSlider imagesSlides={imageSlides}/> : ''}
+      <ImageSlider imageSlides={imageSlides}/>
       <p className="techsList">Highlight Technologies: {project.tech}</p>
     </div>
   );

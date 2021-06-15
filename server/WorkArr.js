@@ -7,7 +7,7 @@ module.exports = [
         video: "https://www.youtube.com/watch?v=GpambqICENw&t=3s",
         images: ["https://i.imgur.com/W0TZJBe.png",
          "https://i.imgur.com/34KZxpd.png",
-         ".https://i.imgur.com/rQBVlRz.png",
+         "https://i.imgur.com/rQBVlRz.png",
          "https://i.imgur.com/fBJFjUS.png"]
     },
     {
