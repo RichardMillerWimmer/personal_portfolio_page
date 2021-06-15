@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 
-// import ImageSlider from "./ImageSlider";
+import ImageSlider from "./ImageSlider";
 
 function WorkDisplay(props) {
   const [project, setProject] = useState({});
@@ -27,9 +27,11 @@ function WorkDisplay(props) {
   console.log(project);
 
   return (
-    <div className="work">
-      <h3>{project.title}</h3>
-      <p>{project.description}</p>
+    <div className="workDisplay">
+      <h2>{project.title}</h2>
+      <p className="workDisplayText">{project.description}</p>
+      <ImageSlider images={project.images}/>
+      <p className="techsList">Highlight Technologies: {project.tech}</p>
     </div>
   );
 }

@@ -316,6 +316,35 @@ body {
     width: 500px;
   }
 }
+.workDisplay {
+  height: auto;
+  background: rgba(39, 51, 107, 0.5);
+  padding: 50px 30px;
+}
+.workDisplay h2 {
+  font-family: "Special Elite", cursive;
+  font-size: 2em;
+  padding-bottom: 20px;
+}
+.workDisplay .workDisplayText {
+  text-align: left;
+  padding: 0 30px;
+  line-height: 1.4;
+  font-family: "Fira Sans", sans-serif;
+}
+.workDisplay .techsList {
+  text-align: left;
+  padding: 0 30px;
+  line-height: 1.4;
+  font-family: "Fira Sans", sans-serif;
+}
+
+@media (min-width: 800px) {
+  .workDisplayText {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
 a {
   cursor: pointer;
 }

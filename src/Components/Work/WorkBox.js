@@ -25,7 +25,7 @@ function WorkBox(props) {
             }}
             onClick={setLocalStorage(work)}
           >
-            <img src={props.work.imgOne} alt={props.work.title} className="workImg" />
+            <img src={props.work.images[0]} alt={props.work.title} className="workImg" />
           </Link>
         </div>
       </div>

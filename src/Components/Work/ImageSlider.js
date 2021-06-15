@@ -3,14 +3,14 @@ import React, { useState } from "react";
 const ImageSlider = (props) => {
   const [current, setCurrent] = useState(0);
 
-  console.log(props.theme);
+  // console.log(props.theme);
 
   const nextSlide = () => {
-    setCurrent(current === props.slides.length - 1 ? 0 : current + 1);
+    setCurrent(current === props.images.length - 1 ? 0 : current + 1);
   };
 
   const prevSlide = () => {
-    setCurrent(current === 0 ? props.slides.length - 1 : current - 1);
+    setCurrent(current === 0 ? props.images.length - 1 : current - 1);
   };
 
   console.log(props);
@@ -24,7 +24,7 @@ const ImageSlider = (props) => {
         <a className="imageHover" href={props.site} target="_blank" rel="noreferrer">
           <div className="siteHover">
             {/* <p className="visitSite">visit site</p> */}
-            {props.slides.map((slide, index) => {
+            {props.images.map((slide, index) => {
               return (
                 <div
                   className={index === current ? "slide active" : "slide"}
