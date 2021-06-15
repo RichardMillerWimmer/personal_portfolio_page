@@ -1,7 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const ImageSlider = (props) => {
   const [current, setCurrent] = useState(0);
+  // const [imageSlides, setImageSlides] = useState([]);
+
+  // useEffect(() => {
+  //   console.log('useeffect hit')
+  //   setImageSlides(props.images)
+  // }, [props])
 
   const nextSlide = () => {
     setCurrent(current === props.images.length - 1 ? 0 : current + 1);
@@ -11,20 +17,23 @@ const ImageSlider = (props) => {
     setCurrent(current === 0 ? props.images.length - 1 : current - 1);
   };
 
-  console.log(props);
+  console.log(props.imagesSlides);
+  // console.log(imageSlides)
 
-  // let imageSlides = props.images.map((slide, index) => {
-  //   return (
-  //     <div
-  //       className={index === current ? "slide active" : "slide"}
-  //                 key={index}
-  //               >
-  //                 {current === index && (
-  //                   <img src={slide} alt="" className="image" />
-  //                 )}
-  //     </div>
-  //   )
-  // })
+  let imageSlidesMapped;
+  if(props) {
+   imageSlidesMapped = props.imageSlides.map((slide, index) => {
+    return (
+      <div
+        className={index === current ? "slide active" : "slide"}
+                  key={index}
+                >
+                  {current === index && (
+                    <img src={slide} alt="" className="image" />
+                  )}
+      </div>
+    )
+    })}
 
   return (
     <section>
@@ -34,11 +43,11 @@ const ImageSlider = (props) => {
           &#10092;
         </p>
         <a className="imageHover" href={props.title} target="_blank" rel="noreferrer">
-          {/* {imageSlides} */}
+          {/* {props ? imageSlidesMapped : ''} */}
           {/* <img src={props.images}/> */}
           {/* <div className="siteHover">
             <p className="visitSite">visit site</p>
-            {props.images.map((slide, index) => {
+            {imageSlides.map((slide, index) => {
               return (
                 <div
                   className={index === current ? "slide active" : "slide"}
