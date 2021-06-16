@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 const ImageSlider = (props) => {
   const [current, setCurrent] = useState(0);
-  const [imageSlides, setImageSlides] = useState([]);
+  
 
   // useEffect(() => {
   //   setImageSlides(props.imageSlides)
@@ -17,7 +17,7 @@ const ImageSlider = (props) => {
     setCurrent(current === 0 ? props.imageSlides.length - 1 : current - 1);
   };
 
-  console.log(props.imageSlides);
+  // console.log(props.imageSlides);
   // console.log(typeof props.imageSlides)
 
   let imageSlidesMapped = [];

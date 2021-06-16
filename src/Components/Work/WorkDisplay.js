@@ -15,7 +15,7 @@ function WorkDisplay(props) {
 
   useEffect(() => {
     setImageSlides(project.images)
-    console.log(imageSlides)
+    // console.log(imageSlides)
   }, [project])
 
 
@@ -23,18 +23,18 @@ function WorkDisplay(props) {
     // console.log('getProject');
     axios.get(`/api/work/${props.match.params.id}`)
     .then(res => {
-      console.log(res.data);
+      // console.log(res.data);
       setProject(res.data[0]);
       setImageSlides(res.data[0].images)
-      console.log(res.data[0].images)
+      // console.log(res.data[0].images)
       // console.log(imageSlides)
     })
     .catch(err => console.log(err));
   }
 
 
-  console.log(imageSlides)
-  console.log(project);
+  // console.log(imageSlides)
+  // console.log(project);
 
   return (
     <div className="workDisplay">
