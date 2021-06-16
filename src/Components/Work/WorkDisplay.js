@@ -38,20 +38,25 @@ function WorkDisplay(props) {
   return (
     <section className="workDisplay">
       <h2>{project.title}</h2>
-      <p className="workDisplayText">{project.description}</p>
-      <ImageSlider imageSlides={imageSlides} />
-      <div>
-        <h4>Highlight Technologies</h4>
-        <p className="techsList">{project.tech}</p>
+      <div className="workDisplayFlex">
+        <p className="workDisplayText">{project.description}</p>
+        <div className="imageSliderContainer">
+          <ImageSlider imageSlides={imageSlides} />
+        </div>
+        <div className="techContainer">
+          <h4>Highlight Technologies</h4>
+          <p className="techsList">{project.tech}</p>
+        </div>
+        <div className="iframeContainer">
+          <iframe
+            className="responsiveIframe"
+            src={project.video}
+            loading="eager"
+            title={project.title}
+            border="none"
+          />
+        </div>
       </div>
-      <iframe 
-        src={project.video}
-        loading='eager'
-        height='230'
-        width='400'
-        title={project.title}
-        border='none'
-      />
     </section>
   );
 }
