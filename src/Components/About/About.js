@@ -14,13 +14,13 @@ function About() {
         <br></br>
         <p>
           My professional path has lead me to development but along the way I
-          have gathered many skills in other creative disciplines. This gives me a
+          have gathered many skills in other creative disciplines. Some of these areas include music, graphic design, video, social media content and strategy. This gives me a
           unique approach to development and design.
         </p>
         <br></br>
         <p>
           I am a driven lifelong learner who is always looking to take on a new
-          skill and tackle exciting projects.
+          skill and tackle exciting projects. Along with web development, I enjoy improving my german skills, woodworking, and home improvment projects.  
         </p>
         <br></br>
         <p>

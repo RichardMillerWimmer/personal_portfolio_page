@@ -7,7 +7,7 @@ const app = express();
 
 const {SERVER_PORT} = process.env;
 
-// app.use(express.static(`${__dirname}/../build`))
+app.use(express.static(`${__dirname}/../build`))
 
 app.use(express.json());
 

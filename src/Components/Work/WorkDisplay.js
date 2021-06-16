@@ -52,6 +52,7 @@ function WorkDisplay(props) {
             className="responsiveIframe"
             src={project.video}
             loading="eager"
+            allowFullScreen='true'
             title={project.title}
             border="none"
           />
