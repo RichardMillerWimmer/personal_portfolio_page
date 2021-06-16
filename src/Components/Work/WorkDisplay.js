@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from 'axios';
+import axios from "axios";
 
 import ImageSlider from "./ImageSlider";
 
@@ -10,39 +10,49 @@ function WorkDisplay(props) {
   // console.log(props)
 
   useEffect(() => {
-    getProject()
+    getProject();
   }, []);
 
   useEffect(() => {
-    setImageSlides(project.images)
+    setImageSlides(project.images);
     // console.log(imageSlides)
-  }, [project])
-
+  }, [project]);
 
   const getProject = () => {
     // console.log('getProject');
-    axios.get(`/api/work/${props.match.params.id}`)
-    .then(res => {
-      // console.log(res.data);
-      setProject(res.data[0]);
-      setImageSlides(res.data[0].images)
-      // console.log(res.data[0].images)
-      // console.log(imageSlides)
-    })
-    .catch(err => console.log(err));
-  }
-
+    axios
+      .get(`/api/work/${props.match.params.id}`)
+      .then((res) => {
+        // console.log(res.data);
+        setProject(res.data[0]);
+        setImageSlides(res.data[0].images);
+        // console.log(res.data[0].images)
+        // console.log(imageSlides)
+      })
+      .catch((err) => console.log(err));
+  };
 
   // console.log(imageSlides)
   // console.log(project);
 
   return (
-    <div className="workDisplay">
+    <section className="workDisplay">
       <h2>{project.title}</h2>
       <p className="workDisplayText">{project.description}</p>
-      <ImageSlider imageSlides={imageSlides}/>
-      <p className="techsList">Highlight Technologies: {project.tech}</p>
-    </div>
+      <ImageSlider imageSlides={imageSlides} />
+      <div>
+        <h4>Highlight Technologies</h4>
+        <p className="techsList">{project.tech}</p>
+      </div>
+      <iframe 
+        src={project.video}
+        loading='eager'
+        height='230'
+        width='400'
+        title={project.title}
+        border='none'
+      />
+    </section>
   );
 }
 

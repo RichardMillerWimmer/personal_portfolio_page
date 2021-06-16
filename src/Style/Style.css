@@ -328,12 +328,17 @@ body {
 }
 .workDisplay .workDisplayText {
   text-align: left;
-  padding: 0 30px;
+  padding: 0 30px 30px 30px;
   line-height: 1.4;
   font-family: "Fira Sans", sans-serif;
 }
+.workDisplay h4 {
+  font-family: "Special Elite", cursive;
+  font-size: 1.5em;
+  padding: 15px;
+}
 .workDisplay .techsList {
-  text-align: left;
+  text-align: center;
   padding: 0 30px;
   line-height: 1.4;
   font-family: "Fira Sans", sans-serif;
@@ -341,6 +346,11 @@ body {
 
 @media (min-width: 800px) {
   .workDisplayText {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .techsList {
     width: 500px;
     margin: 0 auto;
   }
@@ -353,7 +363,7 @@ a {
   position: relative;
   object-fit: contain;
   width: 300px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 15px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
