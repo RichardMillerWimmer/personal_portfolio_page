@@ -126,7 +126,7 @@ body {
   transform: rotate(-45deg) translate(0, -2px);
 }
 
-#menu {
+#menuDrop {
   position: absolute;
   width: 170px;
   margin: -100px 0 0 -105px;
@@ -141,7 +141,7 @@ body {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-#menu li {
+#menuDrop li {
   padding: 10px 0;
   font-size: 22px;
 }
@@ -150,6 +150,35 @@ body {
   transform: none;
 }
 
+#menuBar {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  #menuDrop {
+    display: none;
+  }
+
+  #menuToggle {
+    display: none;
+  }
+
+  #menuBar {
+    display: flex;
+  }
+
+  #menuBar a {
+    display: inline-block;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 1.5rem;
+    margin: 35px 15px 15px 15px;
+  }
+
+  #menuBar a:hover {
+    text-decoration: underline;
+  }
+}
 .hero {
   flex: 1 1 auto;
   width: 100vw;
