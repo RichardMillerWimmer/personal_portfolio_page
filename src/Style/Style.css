@@ -11,15 +11,15 @@
 body {
   text-align: center;
   color: #f0f0f0;
-  background: linear-gradient(rgba(39, 51, 107, 0.5), rgba(39, 51, 107, 0.5)), url("../Media/Nupar.jpg");
+  background: url("../Media/Nupar.jpg");
   background-repeat: no-repeat;
   object-fit: contain;
   background-origin: border-box;
   background-attachment: fixed;
-  background-size: 300vh auto;
-  -webkit-background-size: 300vh auto;
-  -moz-background-size: 300vh auto;
-  -o-background-size: 300vh auto;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-position-x: 64.5%;
   background-position-y: 70%;
 }
@@ -353,7 +353,7 @@ body {
 .workDisplay {
   height: auto;
   width: 100vw;
-  background: rgba(39, 51, 107, 0.5);
+  background: rgba(39, 51, 107, 0.75);
   padding: 50px 30px 30px 30px;
 }
 .workDisplay h2 {
@@ -532,7 +532,7 @@ a {
 
 .about {
   height: auto;
-  background: rgba(39, 51, 107, 0.5);
+  background: rgba(39, 51, 107, 0.75);
   padding: 50px 30px;
 }
 .about h2 {
@@ -584,7 +584,7 @@ a {
 .contact {
   width: 100vw;
   height: calc(100vh - 210px);
-  background: rgba(39, 51, 107, 0.5);
+  background: rgba(39, 51, 107, 0.75);
   padding: 30px;
 }
 .contact h2 {
@@ -598,6 +598,7 @@ a {
 }
 
 .footer {
+  background: rgba(39, 51, 107, 0.75);
   box-sizing: border-box;
   display: flex;
   flex-flow: column nowrap;
