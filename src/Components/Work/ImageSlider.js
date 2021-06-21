@@ -47,7 +47,7 @@ const ImageSlider = (props) => {
         </p>
         <a
           className="imageHover"
-          href={props.title}
+          href={props.url}
           target="_blank"
           rel="noreferrer"
         >

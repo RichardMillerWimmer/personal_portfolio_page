@@ -37,11 +37,11 @@ function WorkDisplay(props) {
 
   return (
     <section className="workDisplay">
-      <h2>{project.title}</h2>
+      <a href={project.url} target="_blank"><h2>{project.title}</h2></a>
       <div className="workDisplayFlex">
         <p className="workDisplayText">{project.description}</p>
         <div className="imageSliderContainer">
-          <ImageSlider imageSlides={imageSlides} />
+          <ImageSlider imageSlides={imageSlides} url={project.url} />
         </div>
         <div className="techContainer">
           <h4>Highlight Technologies</h4>
@@ -55,6 +55,7 @@ function WorkDisplay(props) {
             allowFullScreen='true'
             title={project.title}
             border="none"
+            width="100%"
           />
         </div>
       </div>

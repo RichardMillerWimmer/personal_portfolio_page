@@ -8,7 +8,8 @@ module.exports = [
         images: ["https://i.imgur.com/W0TZJBe.png",
          "https://i.imgur.com/34KZxpd.png",
          "https://i.imgur.com/rQBVlRz.png",
-         "https://i.imgur.com/fBJFjUS.png"]
+         "https://i.imgur.com/fBJFjUS.png"],
+        url: "https://polymathvisualsstore.com/#/"
     },
     {
         id: 1,
@@ -19,6 +20,7 @@ module.exports = [
         images: ["https://i.imgur.com/rrWr38H.jpg",
          "https://i.imgur.com/EsuucG4.png",
          "https://i.imgur.com/DaJIlTI.png",
-         "https://i.imgur.com/YZOVIrh.png"]
+         "https://i.imgur.com/YZOVIrh.png"],
+        url: "https://toptablegames.net/#/"
     }
 ]

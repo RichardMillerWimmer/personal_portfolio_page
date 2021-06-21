@@ -357,10 +357,15 @@ body {
   background: rgba(39, 51, 107, 0.75);
   padding: 50px 30px 30px 30px;
 }
+.workDisplay a {
+  text-decoration: none;
+  color: #f0f0f0;
+  cursor: pointer;
+}
 .workDisplay h2 {
   font-family: "Special Elite", cursive;
   font-size: 2em;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .workDisplay .workDisplayText {
   text-align: left;
@@ -404,10 +409,6 @@ body {
   }
 }
 @media (min-width: 800px) {
-  .workDisplay {
-    height: calc(100vh - 75px);
-  }
-
   .workDisplayText {
     width: 500px;
     margin: 0 auto;
