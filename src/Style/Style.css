@@ -12,11 +12,11 @@
   min-height: 120vh;
   background-origin: border-box;
   background-attachment: fixed;
-  background-size: 420vh auto;
-  -webkit-background-size: 420vh auto;
-  -moz-background-size: 420vh auto;
-  -o-background-size: 420vh auto;
-  background-position-x: 61%;
+  background-size: auto 170vh;
+  -webkit-background-size: auto 170vh;
+  -moz-background-size: auto 170vh;
+  -o-background-size: auto 170vh;
+  background-position-x: 64%;
   background-position-y: 70%;
 }
 
