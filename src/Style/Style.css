@@ -14,6 +14,7 @@ body {
   background: linear-gradient(rgba(39, 51, 107, 0.5), rgba(39, 51, 107, 0.5)), url("../Media/Nupar.jpg");
   background-repeat: no-repeat;
   object-fit: contain;
+  background-origin: border-box;
   background-attachment: fixed;
   background-size: 300vh auto;
   background-position-x: 63.5%;
