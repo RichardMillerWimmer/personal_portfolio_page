@@ -16,7 +16,10 @@ body {
   object-fit: contain;
   background-origin: border-box;
   background-attachment: fixed;
-  background-size: 450vh auto;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-position-x: 64.5%;
   background-position-y: 70%;
 }
