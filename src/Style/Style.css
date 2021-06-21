@@ -6,15 +6,10 @@
 .App {
   width: 100vw;
   min-height: 120vh;
-}
-
-body {
-  text-align: center;
-  color: #f0f0f0;
   background-image: linear-gradient(rgba(39, 51, 107, 0.25), rgba(39, 51, 107, 0.25)), url("../Media/Nupar.jpg");
   background-repeat: no-repeat;
   object-fit: contain;
-  min-height: 100%;
+  min-height: 120vh;
   background-origin: border-box;
   background-attachment: fixed;
   background-size: cover;
@@ -23,6 +18,11 @@ body {
   -o-background-size: cover;
   background-position-x: 64.5%;
   background-position-y: 70%;
+}
+
+body {
+  text-align: center;
+  color: #f0f0f0;
 }
 
 .header {
