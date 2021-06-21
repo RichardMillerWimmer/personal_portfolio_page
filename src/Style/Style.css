@@ -11,7 +11,7 @@
 body {
   text-align: center;
   color: #f0f0f0;
-  background: url("../Media/Nupar.jpg");
+  background-image: linear-gradient(rgba(39, 51, 107, 0.25), rgba(39, 51, 107, 0.25)), url("../Media/Nupar.jpg");
   background-repeat: no-repeat;
   object-fit: contain;
   background-origin: border-box;
@@ -403,6 +403,10 @@ body {
   }
 }
 @media (min-width: 800px) {
+  .workDisplay {
+    height: calc(100vh - 75px);
+  }
+
   .workDisplayText {
     width: 500px;
     margin: 0 auto;

@@ -10,6 +10,7 @@ $font-header: 'Special Elite', cursive
 $color-font: rgb(240, 240, 240)
 $color-theme: rgb(39, 51, 107)
 $color-theme-trans: rgba(39, 51, 107, 0.75)
+$color-theme-trans-light: rgba(39, 51, 107, 0.25)
   
   
 *
@@ -22,7 +23,7 @@ $color-theme-trans: rgba(39, 51, 107, 0.75)
 body 
   text-align: center
   color: $color-font
-  background: url('../Media/Nupar.jpg')
+  background-image: linear-gradient($color-theme-trans-light, $color-theme-trans-light), url('../Media/Nupar.jpg')
   background-repeat: no-repeat
   object-fit: contain
   // padding-bottom: 65.89%
