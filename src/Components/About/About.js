@@ -20,7 +20,7 @@ function About() {
         <br></br>
         <p>
           I am a driven lifelong learner who is always looking to take on a new
-          skill and tackle exciting projects. Along with web development, I enjoy improving my german skills, woodworking, and home improvment projects.  
+          skill and tackle exciting projects. Along with web development, I enjoy improving my german skills, woodworking, and home improvement projects.  
         </p>
         <br></br>
         <p>
