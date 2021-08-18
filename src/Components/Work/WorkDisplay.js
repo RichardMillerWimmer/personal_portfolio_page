@@ -37,7 +37,7 @@ function WorkDisplay(props) {
 
   return (
     <section className="workDisplay">
-      <a href={project.url} target="_blank"><h2>{project.title}</h2></a>
+      <a href={project.url} target="_blank" rel="noreferrer"><h2>{project.title}</h2></a>
       <div className="workDisplayFlex">
         <p className="workDisplayText">{project.description}</p>
         <div className="imageSliderContainer">
