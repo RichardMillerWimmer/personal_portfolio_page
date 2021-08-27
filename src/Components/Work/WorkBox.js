@@ -20,7 +20,7 @@ function WorkBox(props) {
         <div className="wrapImage">
           <Link
             to={{
-              pathname: `/project/${props.work.id}`,
+              pathname: `/work/${props.work.id}`,
               state: { work: work },
             }}
             onClick={setLocalStorage(work)}
