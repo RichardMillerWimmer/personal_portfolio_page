@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+// import axios from "axios";
 
 import ImageSlider from "./ImageSlider";
 
@@ -7,30 +7,36 @@ function WorkDisplay(props) {
   const [project, setProject] = useState({});
   const [imageSlides, setImageSlides] = useState([]);
 
-  console.log(props.location.state.work)
+  // console.log(props.location.state.work)
 
   useEffect(() => {
-    getProject();
+    setProject(props.location.state.work)
+    setImageSlides(props.location.state.work.images)
   }, []);
+  
 
-  useEffect(() => {
-    setImageSlides(project.images);
-    // console.log(imageSlides)
-  }, [project]);
+  // useEffect(() => {
+    // getProject();
+  // }, []);
 
-  const getProject = () => {
-    // console.log('getProject');
-    axios
-      .get(`/api/work/${props.match.params.id}`)
-      .then((res) => {
-        // console.log(res.data);
-        setProject(res.data[0]);
-        setImageSlides(res.data[0].images);
-        // console.log(res.data[0].images)
-        // console.log(imageSlides)
-      })
-      .catch((err) => console.log(err));
-  };
+  // useEffect(() => {
+  //   setImageSlides(project.images);
+  //   // console.log(imageSlides)
+  // }, [project]);
+
+  // const getProject = () => {
+  //   // console.log('getProject');
+  //   axios
+  //     .get(`/api/work/${props.match.params.id}`)
+  //     .then((res) => {
+  //       // console.log(res.data);
+  //       setProject(res.data[0]);
+  //       setImageSlides(res.data[0].images);
+  //       // console.log(res.data[0].images)
+  //       // console.log(imageSlides)
+  //     })
+  //     .catch((err) => console.log(err));
+  // };
 
   // console.log(imageSlides)
   // console.log(project);

@@ -7,11 +7,6 @@ function WorkBox(props) {
     useEffect(() => {
         setWork(props.work)
     },[])
-  // console.log(props);
-
-  // const setLocalStorage = (localProject) => {
-  //   localStorage.setItem("project-object", JSON.stringify(localProject))
-  // };
 
   return (
     <section className="workFlex">

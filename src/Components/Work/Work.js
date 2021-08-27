@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
 // import axios from "axios";
 
 import WorkBox from "./WorkBox";
@@ -7,7 +7,7 @@ import {WorkContext} from '../../WorkContext';
 
 function Work() {
   // const [workArr, setWorkArr] = useState([]);
-  const [workArr, setWorkArr] = useContext(WorkContext);
+  const [workArr] = useContext(WorkContext);
 
   // useEffect(() => {
   //   getAllWork();
