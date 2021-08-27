@@ -9,9 +9,9 @@ function WorkBox(props) {
     },[])
   // console.log(props);
 
-  const setLocalStorage = (localProject) => {
-    localStorage.setItem("project-object", JSON.stringify(localProject))
-  };
+  // const setLocalStorage = (localProject) => {
+  //   localStorage.setItem("project-object", JSON.stringify(localProject))
+  // };
 
   return (
     <section className="workFlex">
@@ -23,7 +23,7 @@ function WorkBox(props) {
               pathname: `/work/${props.work.id}`,
               state: { work: work },
             }}
-            onClick={setLocalStorage(work)}
+            // onClick={setLocalStorage(work)}
           >
             <img src={props.work.images[0]} alt={props.work.title} className="workImg" />
           </Link>

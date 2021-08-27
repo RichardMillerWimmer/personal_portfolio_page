@@ -7,7 +7,7 @@ function WorkDisplay(props) {
   const [project, setProject] = useState({});
   const [imageSlides, setImageSlides] = useState([]);
 
-  // console.log(props)
+  console.log(props.location.state.work)
 
   useEffect(() => {
     getProject();

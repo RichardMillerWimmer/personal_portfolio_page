@@ -1,26 +1,29 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState, useEffect, useContext } from "react";
+// import axios from "axios";
 
 import WorkBox from "./WorkBox";
 
-function Work() {
-  const [workArr, setWorkArr] = useState([]);
+import {WorkContext} from '../../WorkContext';
 
-  useEffect(() => {
-    getAllWork();
-  }, []);
+function Work() {
+  // const [workArr, setWorkArr] = useState([]);
+  const [workArr, setWorkArr] = useContext(WorkContext);
+
+  // useEffect(() => {
+  //   getAllWork();
+  // }, []);
 
   // console.log(WorkArr)
 
-  const getAllWork = () => {
-    // console.log("getAllWork");
-    axios.get('/api/work')
-      .then((res) => {
-        // console.log(res.data);
-        setWorkArr(res.data);
-      })
-      .catch((err) => console.log(err));
-  };
+  // const getAllWork = () => {
+  //   // console.log("getAllWork");
+  //   axios.get('/api/work')
+  //     .then((res) => {
+  //       // console.log(res.data);
+  //       setWorkArr(res.data);
+  //     })
+  //     .catch((err) => console.log(err));
+  // };
 
   let mappedWork = workArr.map((elem) => {
     return (
